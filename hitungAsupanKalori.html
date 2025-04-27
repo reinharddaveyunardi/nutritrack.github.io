@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriTrack</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="title_desc">
+          <div class="title_container">
+            <h1 hred>NutriTrack</h1>
+            <div class="link_balik">
+              <a href="index.html"><< Kembali ke beranda</a>
+            </div>
+          </div>
+
+          <div class="kalori_card_wrapper">
+            <div class="kalori_card_container">
+              <div class="kalori_input_container">
+                <div class="input_data1">
+                  <div class="input_container">
+                    <div class="input_title">Usia</div>
+                    <div class="kolom_input">
+                      <input
+                        type="number"
+                        id="usia"
+                        value="30"
+                        min="0"
+                        max="200"
+                        step="1"
+                      />
+                      <div class="input_gram">Tahun</div>
+                    </div>
+                  </div>
+
+                  <div class="input_container">
+                    <div class="input_title">Tinggi Badan</div>
+                    <div class="kolom_input">
+                      <input
+                        type="number"
+                        id="tinggi_badan"
+                        value="172"
+                        min="0"
+                        step="1"
+                      />
+                      <div class="input_gram">Cm</div>
+                    </div>
+                  </div>
+
+                  <div class="input_container">
+                    <div class="input_title">Berat Badan</div>
+                    <div class="kolom_input">
+                      <input
+                        type="number"
+                        id="berat_badan"
+                        value="68"
+                        min="0"
+                        step="1"
+                      />
+                      <div class="input_gram">Kg</div>
+                    </div>
+                  </div>
+
+                  <div class="input_container">
+                    <div class="input_title">Kelamin</div>
+                    <div class="kolom_radio">
+                      <div class="check_laki">
+                        <input
+                          type="radio"
+                          name="kelamin"
+                          value="laki"
+                          id="kelamin"
+                          checked
+                        />
+                        <label for="kelamin">Laki - laki</label>
+                      </div>
+                      <div class="check_perempuan">
+                        <input
+                          type="radio"
+                          name="kelamin"
+                          value="kelamin"
+                          id="perempuan"
+                        />
+                        <label for="kelamin">Perempuan</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input_container">
+                    <div class="input_title">Tingkat Aktivitas</div>
+                    <div class="kolom_input">
+                      <select id="aktifitas">
+                        <option value="kurangAktif">Sedentary</option>
+                        <option value="ringanAktif">Ringan</option>
+                        <option value="sedangAktif" selected>Sedang</option>
+                        <option value="sangatAktif">Aktif</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="input_container">
+                    <div class="input_title">Kalori Hari Ini</div>
+                    <div class="kolom_input">
+                      <input
+                        type="number"
+                        id="kalori_today"
+                        value="2120"
+                        min="0"
+                        step="1"
+                      />
+                      <div class="input_gram">Kkal</div>
+                    </div>
+                  </div>
+
+                  <div class="status_container" id="infoContainer">
+                    <div class="status_teks" id="infoKalori"></div>
+                    <div class="status_kalori" id="infoKaloriBox">
+                      <div class="total_kalori_title">Total Kalori 7 Hari</div>
+                      <div class="total_kalori_value" id="totalKalori7"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input_data2">
+                  <div class="title_input_kalori">
+                    Asupan Kalori Selama 7 Hari (Kkal)
+                  </div>
+                  <div class="bagian_input">
+                    <div class="input_container">
+                      <div class="input_title">Senin</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="senin_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="input_container">
+                      <div class="input_title">Selasa</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="selasa_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="input_container">
+                      <div class="input_title">Rabu</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="rabu_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bagian_input">
+                    <div class="input_container">
+                      <div class="input_title">Kamis</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="kamis_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="input_container">
+                      <div class="input_title">Jumat</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="jumat_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="input_container">
+                      <div class="input_title">Sabtu</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="sabtu_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bagian_input">
+                    <div class="input_container">
+                      <div class="input_title">Minggu</div>
+                      <div class="kolom_input">
+                        <input
+                          type="number"
+                          id="minggu_kalori"
+                          value="2120"
+                          min="0"
+                          step="1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bagian_input">
+                    <div class="dbatang_container">
+                      <canvas id="diagramKalori"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn_hitung_kalori" onclick="hitungKaloris()">
+                Hitung Kebutuhan Kalori >>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="hitungAsupanKalori.js"></script>
+  </body>
+</html>

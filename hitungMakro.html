@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriTrack</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="title_desc">
+          <div class="title_container">
+            <h1 hred>NutriTrack</h1>
+            <div class="link_balik">
+              <a href="index.html"><< Kembali ke beranda</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_wrapper">
+          <div class="card_container">
+            <div class="card">
+              <div class="input_wrapper">
+                <div class="input_container">
+                  <div class="input_title">Karbohidrat</div>
+                  <div class="kolom_input">
+                    <input
+                      type="number"
+                      id="karbohidrat_value"
+                      value="250"
+                      min="0"
+                      step="1"
+                    />
+                    <div class="input_gram">Gram</div>
+                  </div>
+                </div>
+
+                <div class="input_container">
+                  <div class="input_title">Protein</div>
+                  <div class="kolom_input">
+                    <input
+                      type="number"
+                      id="protein_value"
+                      value="100"
+                      min="0"
+                      step="1"
+                    />
+                    <div class="input_gram">Gram</div>
+                  </div>
+                </div>
+
+                <div class="input_container">
+                  <div class="input_title">Lemak</div>
+                  <div class="kolom_input">
+                    <input
+                      type="number"
+                      id="lemak_value"
+                      value="80"
+                      min="0"
+                      step="1"
+                    />
+                    <div class="input_gram">Gram</div>
+                  </div>
+                </div>
+
+                <button onclick="hitungMakro()">Hitung Makronutrien >></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="diagram_container">
+            <div class="diagram">
+              <canvas id="diagramMakro"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="info_wrapper">
+          <div class="info_container">
+            <div class="info">
+              <div class="info_teks" id="infoTeks">
+                <div class="info_bar">
+                  <div class="bar" id="bar"></div>
+                </div>
+                <div class="info_result" id="infoMakro"></div>
+              </div>
+              <div class="kalori_info" id="kaloriInfo">
+                <div class="total_teks">Total Kalori</div>
+                <div class="total_value" id="totalKalori"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="hitungMakro.js"></script>
+  </body>
+</html>
