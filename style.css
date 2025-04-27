@@ -108,7 +108,7 @@ body {
     min-height: 320px;
 }
 
-.information_card a {
+.information_card button {
     color: #fff;
     background-color: var(--warna_orange);
     border: none;
@@ -120,7 +120,7 @@ body {
     transition: all 0.15s ease;
 }
 
-.information_card a:hover {
+.information_card button:hover {
     background-color: var(--warna_orange_gelap);
     scale: 1.02;
 }
