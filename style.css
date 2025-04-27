@@ -1,586 +1,586 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --warna_utama: #002d66;
-  --warna_biru: #035097;
-  --warna_putih: #fff;
-  --warna_orange: #c56400;
-  --warna_orange_gelap: #874300;
-  --bayangan: 0 10px 20px rgba(0, 0, 0, 0.08);
+    --warna_utama: #002d66;
+    --warna_biru: #035097;
+    --warna_putih: #fff;
+    --warna_orange: #c56400;
+    --warna_orange_gelap: #874300;
+    --bayangan: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-size: cover;
-  background-position: center;
-  background-color: #f0f2f5;
-  overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f2f5;
+    overflow-x: hidden;
 }
 
 /* index */
 .wrapper {
-  width: 85%;
-  margin-top: 50px;
-  justify-self: center;
-  margin-bottom: 50px;
+    width: 85%;
+    margin-top: 50px;
+    justify-self: center;
+    margin-bottom: 50px;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 .title_container {
-  background-color: #ffffff;
-  padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: var(--bayangan);
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: var(--bayangan);
 }
 
 .title_container h1 {
-  font-weight: 700;
-  color: var(--warna_utama);
-  font-size: 28px;
+    font-weight: 700;
+    color: var(--warna_utama);
+    font-size: 28px;
 }
 
 .title_container a {
-  font-size: 11px;
-  text-decoration: none;
-  color: var(--warna_biru);
+    font-size: 11px;
+    text-decoration: none;
+    color: var(--warna_biru);
 }
 
 .link_balik {
-  margin-top: -10px;
-  margin-bottom: 5px;
+    margin-top: -10px;
+    margin-bottom: 5px;
 }
 
 .desc_text {
-  padding: 15px 0px;
-  font-size: 12px;
-  color: var(--warna_utama);
-  text-align: center;
+    padding: 15px 0px;
+    font-size: 12px;
+    color: var(--warna_utama);
+    text-align: center;
 }
 
 .bold_text {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .list_text {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
 .information_card_wrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  gap: 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .information_card_container {
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: var(--bayangan);
-  border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: var(--bayangan);
+    border-radius: 10px;
 }
 
 .information_card {
-  padding: 20px;
+    padding: 20px;
 }
 
 .information_title {
-  color: #fff;
-  background-color: var(--warna_utama);
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 700;
+    color: #fff;
+    background-color: var(--warna_utama);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .information_desc {
-  color: var(--warna_utama);
-  font-size: 12px;
-  padding: 25px 0px;
-  min-height: 320px;
+    color: var(--warna_utama);
+    font-size: 12px;
+    padding: 25px 0px;
+    min-height: 320px;
 }
 
-.information_card button {
-  color: #fff;
-  background-color: var(--warna_orange);
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-  padding: 15px;
-  font-weight: 700;
-  font-size: 12px;
-  transition: all 0.15s ease;
+.information_card a {
+    color: #fff;
+    background-color: var(--warna_orange);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.15s ease;
 }
 
-.information_card button:hover {
-  background-color: var(--warna_orange_gelap);
-  scale: 1.02;
+.information_card a:hover {
+    background-color: var(--warna_orange_gelap);
+    scale: 1.02;
 }
 
 /* hitung makro */
 .card_wrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 25px;
 }
 
 .card_container {
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: var(--bayangan);
-  border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: var(--bayangan);
+    border-radius: 10px;
 }
 
 .card {
-  padding: 20px;
+    padding: 20px;
 }
 
 .kolom_input {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
 }
 
 .kolom_input input {
-  outline: none;
-  width: 100%;
-  border: none;
-  border-bottom-left-radius: 4px;
-  border-left: 1px solid #939393;
-  border-bottom: 1px solid #939393;
-  padding: 0px 10px;
-  font-size: 12px;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-left: 1px solid #939393;
+    border-bottom: 1px solid #939393;
+    padding: 0px 10px;
+    font-size: 12px;
 }
 
 .input_gram {
-  width: 60px;
-  background-color: var(--warna_biru);
-  padding: 8px;
-  color: white;
-  font-weight: 600;
-  font-size: 12px;
-  border-bottom-right-radius: 4px;
-  text-align: center;
+    width: 60px;
+    background-color: var(--warna_biru);
+    padding: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
 }
 
 .input_title {
-  background-color: var(--warna_utama);
-  padding: 5px;
-  color: white;
-  font-weight: 600;
-  font-size: 12px;
-  text-align: center;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+    background-color: var(--warna_utama);
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .input_wrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 25px;
-  padding: 20px 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 10px;
 }
 
 .card button {
-  color: #fff;
-  background-color: var(--warna_orange);
-  border: none;
-  border-radius: 3px;
-  width: 100%;
-  padding: 15px;
-  font-weight: 700;
-  font-size: 12px;
-  transition: all 0.15s ease;
+    color: #fff;
+    background-color: var(--warna_orange);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.15s ease;
 }
 
 .card button:hover {
-  background-color: var(--warna_orange_gelap);
-  scale: 1.02;
+    background-color: var(--warna_orange_gelap);
+    scale: 1.02;
 }
 
 .diagram_bulat {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .diagram_container {
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: var(--bayangan);
-  border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: var(--bayangan);
+    border-radius: 10px;
 }
 
 .diagram {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 
 .info_wrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .info_container {
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: var(--bayangan);
-  border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: var(--bayangan);
+    border-radius: 10px;
 }
 
 .info {
-  padding: 30px;
+    padding: 30px;
 }
 
 .info_bar {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 .bar.rekomendasi {
-  background-color: #2cb67d;
-  width: 50%;
-  height: 6px;
-  justify-self: center;
-  border-radius: 50px;
+    background-color: #2cb67d;
+    width: 50%;
+    height: 6px;
+    justify-self: center;
+    border-radius: 50px;
 }
 
 .info_teks.rekomendasi {
-  background-color: #d2f0e3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    background-color: #d2f0e3;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .info_result.rekomendasi {
-  font-size: 12px;
-  color: #006c0b;
-  text-align: center;
-  padding: 15px 10px;
+    font-size: 12px;
+    color: #006c0b;
+    text-align: center;
+    padding: 15px 10px;
 }
 
 .kalori_info.rekomendasi {
-  width: 100%;
-  background-color: #2cb67d;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+    width: 100%;
+    background-color: #2cb67d;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .bar.sangatRendah {
-  background-color: #b62c2c;
-  width: 50%;
-  height: 6px;
-  justify-self: center;
-  border-radius: 50px;
+    background-color: #b62c2c;
+    width: 50%;
+    height: 6px;
+    justify-self: center;
+    border-radius: 50px;
 }
 
 .info_teks.sangatRendah {
-  background-color: #f0d2d2;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    background-color: #f0d2d2;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .kalori_info.sangatRendah {
-  width: 100%;
-  background-color: #b62c2c;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+    width: 100%;
+    background-color: #b62c2c;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .info_result.sangatRendah {
-  font-size: 12px;
-  color: #6c0000;
-  text-align: center;
-  padding: 15px 10px;
+    font-size: 12px;
+    color: #6c0000;
+    text-align: center;
+    padding: 15px 10px;
 }
 
 .bar.rendah {
-  background-color: #b6b02c;
-  width: 50%;
-  height: 6px;
-  justify-self: center;
-  border-radius: 50px;
+    background-color: #b6b02c;
+    width: 50%;
+    height: 6px;
+    justify-self: center;
+    border-radius: 50px;
 }
 
 .info_teks.rendah {
-  background-color: #f0ead2;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    background-color: #f0ead2;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .kalori_info.rendah {
-  width: 100%;
-  background-color: #b6b02c;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+    width: 100%;
+    background-color: #b6b02c;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .info_result.rendah {
-  font-size: 12px;
-  color: #6c6b00;
-  text-align: center;
-  padding: 15px 10px;
+    font-size: 12px;
+    color: #6c6b00;
+    text-align: center;
+    padding: 15px 10px;
 }
 
 .info_result {
-  font-size: 12px;
-  color: #006c0b;
-  text-align: center;
-  padding: 15px 10px;
+    font-size: 12px;
+    color: #006c0b;
+    text-align: center;
+    padding: 15px 10px;
 }
 
 .kalori_info .total_teks {
-  font-size: 12px;
-  color: #fff;
+    font-size: 12px;
+    color: #fff;
 }
 
 .kalori_info .total_value {
-  font-size: 12px;
-  color: #fff;
-  font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
 }
 
 /* Asupan Kalori */
 .kalori_card_wrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
 }
 
 .kalori_card_container {
-  background-color: #fff;
-  box-shadow: var(--bayangan);
-  width: 100%;
-  border-radius: 10px;
-  padding: 45px 35px;
+    background-color: #fff;
+    box-shadow: var(--bayangan);
+    width: 100%;
+    border-radius: 10px;
+    padding: 45px 35px;
 }
 
 .kalori_input_container {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
 }
 
 .input_data1 {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
 }
 
 .input_data2 {
-  width: 100%;
+    width: 100%;
 }
 
 .kolom_radio {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 .check_laki label,
 .check_perempuan label {
-  color: var(--warna_utama);
-  font-size: 15px;
+    color: var(--warna_utama);
+    font-size: 15px;
 }
 
 .check_laki input,
 .check_perempuan input {
-  accent-color: #002d66;
+    accent-color: #002d66;
 }
 
 .kolom_input select {
-  outline: none;
-  width: 100%;
-  border: none;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-left: 1px solid #939393;
-  border-right: 1px solid #939393;
-  border-bottom: 1px solid #939393;
-  padding: 10px 7px;
-  font-size: 12px;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #939393;
+    border-right: 1px solid #939393;
+    border-bottom: 1px solid #939393;
+    padding: 10px 7px;
+    font-size: 12px;
 }
 
 .status_container {
-  background-color: #d2f0e3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    background-color: #d2f0e3;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .status_teks {
-  padding: 15px 20px;
-  font-size: 12px;
-  color: #006c0b;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: #006c0b;
 }
 
 .status_kalori {
-  width: 100%;
-  background-color: #2cb67d;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+    width: 100%;
+    background-color: #2cb67d;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .status_container.rekomendasi {
-  background-color: #d2f0e3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    background-color: #d2f0e3;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .status_teks.rekomendasi {
-  padding: 15px 20px;
-  font-size: 12px;
-  color: #006c0b;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: #006c0b;
 }
 
 .status_kalori.rekomendasi {
-  width: 100%;
-  background-color: #2cb67d;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+    width: 100%;
+    background-color: #2cb67d;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .status_container.tidakRekomendasi {
-  background-color: #f0ead2;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    background-color: #f0ead2;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .status_teks.tidakRekomendasi {
-  padding: 15px 20px;
-  font-size: 12px;
-  color: #6c6b00;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: #6c6b00;
 }
 
 .status_kalori.tidakRekomendasi {
-  width: 100%;
-  background-color: #b6b02c;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+    width: 100%;
+    background-color: #b6b02c;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .total_kalori_title {
-  color: #fff;
-  font-size: 12px;
+    color: #fff;
+    font-size: 12px;
 }
 
 .total_kalori_value {
-  color: #fff;
-  font-weight: 600;
-  font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .title_input_kalori {
-  font-weight: 600;
-  text-align: center;
-  color: var(--warna_utama);
-  font-size: 18px;
-  padding-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--warna_utama);
+    font-size: 18px;
+    padding-bottom: 15px;
 }
 
 .bagian_input {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 30px 0;
 }
 
 .bagian_input input {
-  border: 1px solid #939393;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  padding: 8px 10px;
+    border: 1px solid #939393;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 8px 10px;
 }
 
 .bagian_input .input_container {
-  width: 100%;
+    width: 100%;
 }
 
 .dbatang_container {
-  width: 100%;
-  height: 310px;
+    width: 100%;
+    height: 310px;
 }
 
 .btn_hitung_kalori {
-  color: #fff;
-  background-color: var(--warna_orange);
-  border: none;
-  border-radius: 3px;
-  width: 100%;
-  padding: 15px;
-  font-weight: 700;
-  font-size: 12px;
-  transition: all 0.15s ease;
+    color: #fff;
+    background-color: var(--warna_orange);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.15s ease;
 }
 
 .btn_hitung_kalori:hover {
-  background-color: var(--warna_orange_gelap);
-  scale: 1.02;
+    background-color: var(--warna_orange_gelap);
+    scale: 1.02;
 }
 
 /* responsif */
 @media (max-width: 768px) {
-  .information_card_wrapper {
-    flex-direction: column;
-  }
+    .information_card_wrapper {
+        flex-direction: column;
+    }
 
-  .card_wrapper {
-    flex-direction: column;
-  }
+    .card_wrapper {
+        flex-direction: column;
+    }
 
-  .kalori_input_container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 50px;
-  }
+    .kalori_input_container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 50px;
+    }
 
-  /* .bagian_input {
+    /* .bagian_input {
     flex-direction: inherit;
   } */
 }

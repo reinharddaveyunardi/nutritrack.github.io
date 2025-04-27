@@ -1,108 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NutriTrack</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <div class="title_desc">
-          <div class="title_container">
-            <h1>NutriTrack</h1>
-          </div>
-          <div class="desc_text">
-            Lacak Makronutrien dan Cek Asupan Kalori Harian Anda di sini!
-          </div>
-        </div>
-        <div class="information_card_wrapper">
-          <div class="information_card_container">
-            <div class="information_card">
-              <div class="information_title">Makronutrien</div>
-              <div class="information_desc">
-                <span class="bold_text">Apa Itu Makronutrien?</span>
-                <br />
-                Makronutrien adalah zat gizi utama yang dibutuhkan tubuh dalam
-                jumlah besar untuk menghasilkan energi dan menjalankan fungsi
-                tubuh. Ada tiga jenis makronutrien penting:
-                <br /><br />
-
-                <div class="list_text">
-                  <span class="bold_text">• Karbohidrat : </span>
-                  Sumber energi utama bagi tubuh.
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NutriTrack</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="title_desc">
+                    <div class="title_container">
+                        <h1>NutriTrack</h1>
+                    </div>
+                    <div class="desc_text">Lacak Makronutrien dan Cek Asupan Kalori Harian Anda di sini!</div>
                 </div>
+                <div class="information_card_wrapper">
+                    <div class="information_card_container">
+                        <div class="information_card">
+                            <div class="information_title">Makronutrien</div>
+                            <div class="information_desc">
+                                <span class="bold_text">Apa Itu Makronutrien?</span>
+                                <br />
+                                Makronutrien adalah zat gizi utama yang dibutuhkan tubuh dalam jumlah besar untuk menghasilkan energi dan menjalankan fungsi
+                                tubuh. Ada tiga jenis makronutrien penting:
+                                <br /><br />
 
-                <div class="list_text">
-                  <span class="bold_text">• Protein : </span>
-                  Membantu membangun dan memperbaiki jaringan tubuh.
+                                <div class="list_text">
+                                    <span class="bold_text">• Karbohidrat : </span>
+                                    Sumber energi utama bagi tubuh.
+                                </div>
+
+                                <div class="list_text">
+                                    <span class="bold_text">• Protein : </span>
+                                    Membantu membangun dan memperbaiki jaringan tubuh.
+                                </div>
+
+                                <div class="list_text">
+                                    <span class="bold_text">• Lemak : </span>
+                                    Menyimpan energi dan mendukung fungsi hormon serta penyerapan vitamin.
+                                </div>
+                                <br />
+
+                                <span class="bold_text">Keseimbangan makronutrien penting untuk menjaga kesehatan, berat badan ideal, dan energi harian.</span>
+                            </div>
+                            <a href="hitungMakro.html"> Mulai Hitung Makronutrien >> </a>
+                        </div>
+                    </div>
+
+                    <div class="information_card_container">
+                        <div class="information_card">
+                            <div class="information_title">Kebutuhan Kalori</div>
+                            <div class="information_desc">
+                                <span class="bold_text">Apa Itu Kebutuhan Kalori?</span>
+                                <br />
+                                Kebutuhan kalori adalah jumlah energi yang dibutuhkan tubuh setiap hari untuk berfungsi secara optimal. Energi ini digunakan
+                                untuk bernapas, berpikir, bergerak, dan menjalankan berbagai proses tubuh lainnya. Setiap orang memiliki kebutuhan kalori yang
+                                berbeda, tergantung pada:
+                                <br /><br />
+
+                                <div class="list_text">
+                                    <span class="bold_text">• Usia : </span>
+                                    Semakin tua, biasanya kebutuhan kalori menurun. Jenis
+                                </div>
+
+                                <div class="list_text">
+                                    <span class="bold_text">• Kelamin : </span>
+                                    Laki-laki cenderung membutuhkan lebih banyak kalori daripada perempuan.
+                                </div>
+
+                                <div class="list_text">
+                                    <span class="bold_text">• Tingkat Aktivitas : </span>
+                                    Semakin aktif, semakin tinggi kebutuhan energi.
+                                </div>
+                                <br />
+
+                                <span class="bold_text"
+                                    >Mengetahui dan mengatur asupan kalori harian penting untuk menjaga berat badan, mendukung kesehatan tubuh, dan mencegah
+                                    kelelahan berlebih.</span
+                                >
+                            </div>
+                            <a href="hitungAsupanKalori.html"> Mulai Hitung Makronutrien >> </a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="list_text">
-                  <span class="bold_text">• Lemak : </span>
-                  Menyimpan energi dan mendukung fungsi hormon serta penyerapan
-                  vitamin.
-                </div>
-                <br />
-
-                <span class="bold_text"
-                  >Keseimbangan makronutrien penting untuk menjaga kesehatan,
-                  berat badan ideal, dan energi harian.</span
-                >
-              </div>
-              <button onclick="goToHitungMakro()">
-                Mulai Hitung Makronutrien >>
-              </button>
             </div>
-          </div>
-
-          <div class="information_card_container">
-            <div class="information_card">
-              <div class="information_title">Kebutuhan Kalori</div>
-              <div class="information_desc">
-                <span class="bold_text">Apa Itu Kebutuhan Kalori?</span>
-                <br />
-                Kebutuhan kalori adalah jumlah energi yang dibutuhkan tubuh
-                setiap hari untuk berfungsi secara optimal. Energi ini digunakan
-                untuk bernapas, berpikir, bergerak, dan menjalankan berbagai
-                proses tubuh lainnya. Setiap orang memiliki kebutuhan kalori
-                yang berbeda, tergantung pada:
-                <br /><br />
-
-                <div class="list_text">
-                  <span class="bold_text">• Usia : </span>
-                  Semakin tua, biasanya kebutuhan kalori menurun. Jenis
-                </div>
-
-                <div class="list_text">
-                  <span class="bold_text">• Kelamin : </span>
-                  Laki-laki cenderung membutuhkan lebih banyak kalori daripada
-                  perempuan.
-                </div>
-
-                <div class="list_text">
-                  <span class="bold_text">• Tingkat Aktivitas : </span>
-                  Semakin aktif, semakin tinggi kebutuhan energi.
-                </div>
-                <br />
-
-                <span class="bold_text"
-                  >Mengetahui dan mengatur asupan kalori harian penting untuk
-                  menjaga berat badan, mendukung kesehatan tubuh, dan mencegah
-                  kelelahan berlebih.</span
-                >
-              </div>
-              <button onclick="goToHitungKalori()">
-                Mulai Hitung Makronutrien >>
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>
